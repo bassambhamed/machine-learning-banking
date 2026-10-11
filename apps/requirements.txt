@@ -1,0 +1,15 @@
+# Backend (API)
+fastapi
+uvicorn
+pydantic
+pandas
+numpy
+scikit-learn
+xgboost
+kmodes
+joblib
+
+# Frontend (interface)
+streamlit
+plotly
+requests

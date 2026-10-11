@@ -1,0 +1,254 @@
+{
+  "model_name": "K-Prototypes (données mixtes)",
+  "version": "2026.10.10",
+  "trained_at": "2026-10-10T22:08:58",
+  "k": 5,
+  "gamma": 0.4788764753425865,
+  "n_clients": 45211,
+  "quality": {
+    "silhouette_onehot": 0.10803285484033659,
+    "davies_bouldin_onehot": 2.095943554956518,
+    "cost": 14803.314380760465,
+    "n_iter": 12
+  },
+  "pca_explained_variance": [
+    0.2539039410876124,
+    0.2070851137686629
+  ],
+  "categories": {
+    "job": [
+      "admin.",
+      "blue-collar",
+      "entrepreneur",
+      "housemaid",
+      "management",
+      "retired",
+      "self-employed",
+      "services",
+      "student",
+      "technician",
+      "unemployed",
+      "unknown"
+    ],
+    "marital": [
+      "divorced",
+      "married",
+      "single"
+    ],
+    "education": [
+      "primary",
+      "secondary",
+      "tertiary",
+      "unknown"
+    ],
+    "default": [
+      "no",
+      "yes"
+    ],
+    "housing": [
+      "no",
+      "yes"
+    ],
+    "loan": [
+      "no",
+      "yes"
+    ]
+  },
+  "defaults": {
+    "job": "blue-collar",
+    "marital": "married",
+    "education": "secondary",
+    "default": "no",
+    "housing": "yes",
+    "loan": "no",
+    "age": 39,
+    "balance": 448
+  },
+  "segments": {
+    "0": {
+      "persona": "Seniors",
+      "description": "Clients de plus de 50 ans, majoritairement mariés, peu de crédit immobilier, forte part de retraités.",
+      "offres": [
+        "Épargne retraite et dépôt à terme",
+        "Prévoyance / dépendance",
+        "Transmission de patrimoine"
+      ],
+      "icone": "🧓",
+      "profil": {
+        "Nb clients": 12870.0,
+        "% portefeuille": 0.2846652363362898,
+        "Âge moyen": 53.683061383061386,
+        "Solde médian (€)": 517.5,
+        "Solde moyen (€)": 989.5943278943279,
+        "% solde négatif": 0.047474747474747475,
+        "% crédit immo": 0.3452214452214452,
+        "% crédit perso": 0.16425796425796427,
+        "% défaut": 0.01421911421911422,
+        "% diplômés sup.": 0.2372183372183372,
+        "% célibataires": 0.07583527583527584,
+        "% cadres & indép.": 0.25664335664335663,
+        "% retraités": 0.15602175602175603,
+        "Taux souscription": 0.1278166278166278,
+        "Lift souscription": 1.0925917111396408
+      },
+      "prototype": {
+        "age": 53.0,
+        "balance": 859.0,
+        "job_group": "Employés & techniciens",
+        "marital": "married",
+        "education": "secondary",
+        "default": "no",
+        "housing": "no",
+        "loan": "no"
+      }
+    },
+    "1": {
+      "persona": "Patrimoniaux",
+      "description": "Soldes nettement plus élevés que la moyenne, très peu de crédit personnel, profil plus diplômé et plus souvent cadre.",
+      "offres": [
+        "Gestion de patrimoine / conseil",
+        "Assurance-vie et placements",
+        "Carte premium"
+      ],
+      "icone": "💎",
+      "profil": {
+        "Nb clients": 3019.0,
+        "% portefeuille": 0.06677578465417708,
+        "Âge moyen": 43.53627028817489,
+        "Solde médian (€)": 7296.0,
+        "Solde moyen (€)": 9407.864524677045,
+        "% solde négatif": 0.0,
+        "% crédit immo": 0.4428618747929778,
+        "% crédit perso": 0.0728718118582312,
+        "% défaut": 0.0009937065253395165,
+        "% diplômés sup.": 0.47565419012918186,
+        "% célibataires": 0.24610798277575355,
+        "% cadres & indép.": 0.45611129513083803,
+        "% retraités": 0.052997681351440874,
+        "Taux souscription": 0.152037098376946,
+        "Lift souscription": 1.2996311693552858
+      },
+      "prototype": {
+        "age": 42.0,
+        "balance": 8484.0,
+        "job_group": "Cadres & indépendants",
+        "marital": "married",
+        "education": "tertiary",
+        "default": "no",
+        "housing": "no",
+        "loan": "no"
+      }
+    },
+    "2": {
+      "persona": "Jeunes actifs",
+      "description": "Autour de 30 ans, majoritairement célibataires, souvent primo-accédants (crédit immobilier), soldes modestes.",
+      "offres": [
+        "Livret et épargne programmée",
+        "Assurance habitation / emprunteur",
+        "Pack jeune actif / crédit auto"
+      ],
+      "icone": "🚀",
+      "profil": {
+        "Nb clients": 11529.0,
+        "% portefeuille": 0.25500431310964145,
+        "Âge moyen": 29.497267759562842,
+        "Solde médian (€)": 355.0,
+        "Solde moyen (€)": 769.6683146847081,
+        "% solde négatif": 0.07468123861566485,
+        "% crédit immo": 0.5863474715933732,
+        "% crédit perso": 0.15534738485558158,
+        "% défaut": 0.01778124728944401,
+        "% diplômés sup.": 0.344869459623558,
+        "% célibataires": 0.7159337323271749,
+        "% cadres & indép.": 0.25743776563448695,
+        "% retraités": 0.0005204267499349467,
+        "Taux souscription": 0.14138260039899384,
+        "Lift souscription": 1.20855525555661
+      },
+      "prototype": {
+        "age": 29.0,
+        "balance": 593.0,
+        "job_group": "Employés & techniciens",
+        "marital": "single",
+        "education": "secondary",
+        "default": "no",
+        "housing": "yes",
+        "loan": "no"
+      }
+    },
+    "3": {
+      "persona": "Familles propriétaires",
+      "description": "Quarantaine, mariés, crédit immobilier en cours pour 7 clients sur 10, soldes modestes ; appétence épargne faible.",
+      "offres": [
+        "Prévoyance famille",
+        "Épargne enfants",
+        "Assurance habitation / emprunteur"
+      ],
+      "icone": "🏠",
+      "profil": {
+        "Nb clients": 16578.0,
+        "% portefeuille": 0.3666806750569552,
+        "Âge moyen": 38.53745928338762,
+        "Solde médian (€)": 382.5,
+        "Solde moyen (€)": 747.2584147665581,
+        "% solde négatif": 0.06508625889733381,
+        "% crédit immo": 0.6999034865484377,
+        "% crédit perso": 0.1617203522740982,
+        "% défaut": 0.014235734105440946,
+        "% diplômés sup.": 0.27488237423090844,
+        "% célibataires": 0.1565930751598504,
+        "% cadres & indép.": 0.27705392689106045,
+        "% retraités": 0.0038605380624924597,
+        "Taux souscription": 0.08969718904572324,
+        "Lift souscription": 0.7667422223380967
+      },
+      "prototype": {
+        "age": 38.0,
+        "balance": 619.0,
+        "job_group": "Employés & techniciens",
+        "marital": "married",
+        "education": "secondary",
+        "default": "no",
+        "housing": "yes",
+        "loan": "no"
+      }
+    },
+    "4": {
+      "persona": "Clients fragiles",
+      "description": "Soldes négatifs (découvert), très forte part de crédits immobiliers et personnels : multi-endettement.",
+      "offres": [
+        "Accompagnement budgétaire",
+        "Regroupement de crédits",
+        "Suivi du risque renforcé"
+      ],
+      "icone": "⚠️",
+      "profil": {
+        "Nb clients": 1215.0,
+        "% portefeuille": 0.026873990842936454,
+        "Âge moyen": 40.72592592592593,
+        "Solde médian (€)": -537.0,
+        "Solde moyen (€)": -666.9102880658436,
+        "% solde négatif": 1.0,
+        "% crédit immo": 0.8123456790123457,
+        "% crédit perso": 0.36049382716049383,
+        "% défaut": 0.15473251028806584,
+        "% diplômés sup.": 0.22962962962962963,
+        "% célibataires": 0.18189300411522633,
+        "% cadres & indép.": 0.23292181069958848,
+        "% retraités": 0.02139917695473251,
+        "Taux souscription": 0.05596707818930041,
+        "Lift souscription": 0.47841322972517697
+      },
+      "prototype": {
+        "age": 40.0,
+        "balance": -661.0,
+        "job_group": "Employés & techniciens",
+        "marital": "married",
+        "education": "secondary",
+        "default": "no",
+        "housing": "yes",
+        "loan": "no"
+      }
+    }
+  }
+}
